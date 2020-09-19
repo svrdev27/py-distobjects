@@ -1,13 +1,19 @@
 from distutils.core import setup
+from setuptools import find_packages
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
   name = 'distobjects',
-  packages = ['distobjects'],
-  version = '0.0.1',
+  packages = find_packages(),
+  version = '0.0.1a1',
   license='GPLv3',
   description = 'Python library to easily map Objects to Caching Systems like Redis',
-  author = 'Sri Venkata Reddy G',
+  long_description=long_description,
+  long_description_content_type="text/markdown",
   url = 'https://github.com/svrdev27/py-distobjects',
-  download_url = 'https://github.com/svrdev27/py-distobjects/archive/v0.0.1.tar.gz',
+  download_url = 'https://github.com/svrdev27/py-distobjects/archive/v0.0.1-alpha.1.tar.gz',
   keywords = ['redis', 'ODM', 'distributed objects', 'caching'],
   install_requires=[
           'redis'
