@@ -1,6 +1,15 @@
 # py-distobjects
 
 **py-distobjects** (Python Distributed Objects) is a Python library to easily map Objects to Caching Systems like Redis.
+### Install
+py-distobjects is available on PyPI:
+```console
+$ pip install distobjects
+```
+if you don't have pip command use -m pip
+```console
+$ python -m pip install distobjects
+```
 
 ### Usage
 - Simply define classes with minimum schema and connect to a backend
